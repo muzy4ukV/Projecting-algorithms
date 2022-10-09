@@ -2,5 +2,5 @@
 D:\PA\Lab_1\func.cpp(30,38): warning C4244: 'initializing': conversion from 'double' to 'unsigned __int64', possible loss of data
 D:\PA\Lab_1\func.cpp(43,15): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'int', possible loss of data
 D:\PA\Lab_1\func.cpp(52,32): warning C4018: '<': signed/unsigned mismatch
-D:\PA\Lab_1\func.cpp(127,11): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+D:\PA\Lab_1\func.cpp(126,11): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
   Lab_1.vcxproj -> D:\PA\Debug\Lab_1.exe

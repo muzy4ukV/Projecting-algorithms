@@ -231,24 +231,10 @@ void merge(string file_name, int sequence_size, int size) {
 	while (A.read((char*)&first_number, sizeof(int))) {
 		file_out.write((char*)&first_number, sizeof(int));
 	}
-
+	while (B.read((char*)&second_number, sizeof(int))) {
+		file_out.write((char*)&second_number, sizeof(int));
+	}
 	file_out.close();
 	A.close();
 	B.close();
 }
-
-/*
-for (int j = 1; j < sequence_size - valueB; j++) {
-
-}
-
-file_out.write((char*)&first_number, sizeof(int));
-for (int j = 1; j < sequence_size - valueA; j++) {
-	A.read((char*)&first_number, sizeof(int));
-	file_out.write((char*)&first_number, sizeof(int));
-}
-
-int arr[15] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-file.write((char*)&arr, sizeof(arr));
-file.close();
-*/

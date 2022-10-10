@@ -1,4 +1,4 @@
-#include "func.h"
+#include "classes.h"
 
 int buff[BUFF_SIZE];
 
@@ -24,6 +24,7 @@ string generate_file() {
 			getline(cin, file_name);
 			cout << "¬вед≥ть розм≥р файлу (у ћб): ";
 			int size; cin >> size;
+			cin.ignore(32767, '\n');
 			cout << "√енеруЇмо файл...\n";
 
 			ofstream file(FOLDER_NAME + file_name, ios::binary);
@@ -99,142 +100,4 @@ void file_output(string name) {
 
 	cout << "\n===========////===========\n\n";
 	file.close();
-}
-
-
-void sort(string file_name) {
-	int quantity_of_number = get_size(file_name);
-	copy_file(file_name, quantity_of_number);
-
-	for (long sequence_size = 1; sequence_size < quantity_of_number; sequence_size *=2) {
-		split(COPY_FILE, sequence_size);
-
-		//file_output(FIRST_FILE);
-		//file_output(SECOND_FILE);
-
-		merge(COPY_FILE, sequence_size, quantity_of_number);
-
-		file_output(COPY_FILE);
-
-	}
-	//file_output(COPY_FILE);
-}
-
-int get_size(string name) {
-	ifstream file(FOLDER_NAME + name, ios::binary);
-	file.seekg(0, ios::end);
-	int size = file.tellg();
-	file.close();
-	size /= 4;
-	return size;
-}
-
-void copy_file(string name, int file_size) {
-	ifstream file(FOLDER_NAME + name, ios::binary);
-	ofstream copy(FOLDER_NAME + COPY_FILE, ios::binary);
-
-	file.read((char*)&buff, file_size * 4);
-	copy.write((char*)&buff, file_size * 4);
-
-	file.close();
-	copy.close();
-}
-
-
-void split(string name, int sequence_size) {
-	ifstream file_out(FOLDER_NAME + name, ios::binary);
-	ofstream A(FOLDER_NAME + FIRST_FILE, ios::binary);
-	ofstream B(FOLDER_NAME + SECOND_FILE, ios::binary);
-	
-	int number;
-	bool flag = true;
-	int value = 0;
-
-	while (file_out.read((char*)&number, sizeof(number))) {
-		if (flag) {
-			A.write((char*)&number, sizeof(number));
-			value++;
-			if (value >= sequence_size) {
-				flag = false;
-				value = 0;
-			}
-		}
-		else {
-			B.write((char*)&number, sizeof(number));
-			value++;
-			if (value >= sequence_size) {
-				flag = true;
-				value = 0;
-			}
-		}
-	}
-	A.close();
-	B.close();
-	file_out.close();
-}
-
-
-void merge(string file_name, int sequence_size, int size) {
-
-	ofstream file_out(FOLDER_NAME + file_name, ios::binary);
-	ifstream A(FOLDER_NAME + FIRST_FILE, ios::binary);
-	ifstream B(FOLDER_NAME + SECOND_FILE, ios::binary);
-	int first_number; int second_number;
-
-
-	while (true) {
-		B.read((char*)&second_number, sizeof(int));
-		if (B.eof())
-			break;
-		A.read((char*)&first_number, sizeof(int));
-		int valueA = 0, valueB = 0;
-
-		while (valueA != sequence_size && valueB != sequence_size) {
-			if (first_number < second_number) {
-				file_out.write((char*)&first_number, sizeof(int));
-				valueA++;
-				if (valueA != sequence_size)
-					A.read((char*)&first_number, sizeof(int));
-			}
-			else {
-				file_out.write((char*)&second_number, sizeof(int));
-				valueB++;
-				if (valueB != sequence_size)
-					B.read((char*)&second_number, sizeof(int));
-			}
-		}
-		if (valueA > valueB) {
-			file_out.write((char*)&second_number, sizeof(int));
-			valueB++;
-			while (valueB < sequence_size) {
-				B.read((char*)&second_number, sizeof(int));
-				if (B.eof())
-					break;
-				file_out.write((char*)&second_number, sizeof(int));
-				valueB++;
-			}
-
-		}
-		else if (valueA < valueB) {
-			file_out.write((char*)&first_number, sizeof(int));
-			valueA++;
-			while (valueA < sequence_size) {
-				A.read((char*)&first_number, sizeof(int));
-				if (A.eof())
-					break;
-				file_out.write((char*)&first_number, sizeof(int));
-				valueA++;
-			}
-		}
-	}
-
-	while (A.read((char*)&first_number, sizeof(int))) {
-		file_out.write((char*)&first_number, sizeof(int));
-	}
-	while (B.read((char*)&second_number, sizeof(int))) {
-		file_out.write((char*)&second_number, sizeof(int));
-	}
-	file_out.close();
-	A.close();
-	B.close();
 }

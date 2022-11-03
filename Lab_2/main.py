@@ -20,7 +20,7 @@ if flag == 1:
     algo.output_result()
 elif flag == 2:
     algo = Algo(root, N)
-    algo.RBFS(root, 2*N)
+    algo.RBFS(root, float('inf'))
     algo.output_result()
 else:
     print("От халепа, щось пішло не так")

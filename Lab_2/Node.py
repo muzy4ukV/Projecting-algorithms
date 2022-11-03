@@ -4,5 +4,5 @@ class Node:
         self.state = state
         self.current_row = current_row
         self.current_depth = current_depth
-        self.f1_value = -1
+        self.f_value = -1
         self.max_states_num = current_state

@@ -1,0 +1,13 @@
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\BetterOne.exe
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\BetterOne.deps.json
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\BetterOne.runtimeconfig.json
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\BetterOne.runtimeconfig.dev.json
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\BetterOne.dll
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\BetterOne.pdb
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\BetterOne.csproj.AssemblyReference.cache
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\BetterOne.AssemblyInfoInputs.cache
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\BetterOne.AssemblyInfo.cs
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\BetterOne.csproj.CoreCompileInputs.cache
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\BetterOne.dll
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\BetterOne.pdb
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\BetterOne.genruntimeconfig.cache

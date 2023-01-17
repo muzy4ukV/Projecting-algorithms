@@ -1,0 +1,15 @@
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\PA_Lab5.exe
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\PA_Lab5.deps.json
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\PA_Lab5.runtimeconfig.json
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\PA_Lab5.runtimeconfig.dev.json
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\PA_Lab5.dll
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\bin\Debug\netcoreapp3.1\PA_Lab5.pdb
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\PA_Lab5.AssemblyInfoInputs.cache
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\PA_Lab5.AssemblyInfo.cs
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\PA_Lab5.csproj.CoreCompileInputs.cache
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\PA_Lab5.dll
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\PA_Lab5.pdb
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\PA_Lab5.genruntimeconfig.cache
+C:\Users\Artem\source\repos\PA_Lab5\BetterOne\obj\Debug\netcoreapp3.1\PA_Lab5.csproj.AssemblyReference.cache
+D:\KPI\2_курс\Проектування алгоритмів\Лаба 5\BetterOne\obj\Debug\netcoreapp3.1\PA_Lab5.dll
+D:\KPI\2_курс\Проектування алгоритмів\Лаба 5\BetterOne\obj\Debug\netcoreapp3.1\PA_Lab5.pdb
